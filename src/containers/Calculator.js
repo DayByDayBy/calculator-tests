@@ -94,7 +94,7 @@ function App() {
 
   const divide = (number) => {
 
-    if (number === 0){
+    if (number === 0) {
       setRunningTotal("hey, don't do that");
     } else {
 
@@ -104,19 +104,22 @@ function App() {
     }
   }
 
-    return (
-      <div className="container">
-        <div className="calculator">
-          <div data-testid="running-total" id="running-total" className="display">{runningTotal}</div>
-          <KeyPad
-            handleNumber={numberClick}
-            handleOperator={operatorClick}
-            handleClear={clearClick}
-            handleDecimal={handleDecimal}
-          />
-        </div>
+  return (
+    <div className="container">
+      <div className="calculator">
+        <div data-testid="running-total" id="running-total" className="display">{runningTotal}</div>
+        <KeyPad
+          handleNumber={numberClick}
+          handleOperator={operatorClick}
+          handleClear={clearClick}
+          handleDecimal={handleDecimal}
+        />
       </div>
-    );
-  }
+      <h1>i am a Calculator</h1>
 
-  export default App;
+      <h2>try me</h2>
+    </div>
+  );
+}
+
+export default App;

@@ -1,16 +1,28 @@
-h1,
+body{
+background:
+radial-gradient(circle at right, #e66465, transparent), 
+radial-gradient(ellipse at left, #459008, transparent);
+
+}  
+  h1,
 h2 {
-  font-weight: normal;
+  font-weight:bolder;
+  font-variant: small-caps;
+  text-align: center;
 }
 
+
 .calculator {
-  background-color: #dedede;
+  background-color: #ecd3d3;
   border: 1px solid #dedede;
   width: 20em;
   height: 30em;
-  margin: 0 auto;
+  margin: 5rem auto;
   text-align: left;
   border-radius: 5px;
+  justify-self: center;
+  align-self: center;
+
 }
 
 .display {
